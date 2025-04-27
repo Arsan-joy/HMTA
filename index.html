@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Resource/IMG_1381.PNG" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>HMTA | Homepage</title>
+    <script src="Resource/index.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <a href="index.html" class="logo">
+            <img src="Resource/IMG_1381.PNG" alt="Logo">
+        </a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav id="mainNav">
+            <ul>
+                <li><a href="profile.html">Profile</a></li>
+                <li class="dropdown">
+                    <a href="#">Struktur <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="Pionir.html">Kabinet Pionir</a>
+                        <a href="Reformasi.html">Kabinet Reformasi</a>
+                        <a href="Sradhakorsa.html">Kabinet Sradhakorsa</a>
+                        <a href="radiant.html">Kabinet Radiant</a>
+                        <a href="samagri.html">Kabinet Samagri</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Event <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="upcoming.html">Upcoming Events</a>
+                        <a href="past.html">Past Events</a>
+                        <a href="annual.html">Annual Programs</a>
+                    </div>
+                </li>
+                <li><a href="gallery.html">Galeri</a></li>
+                <li><a href="calendar.html">Kalender Akademik</a></li>
+            </ul>
+        </nav>
+        
+        <button class="btn-signin">Sign In</button>
+        
+        <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+    </header>
+
+    <!-- Banner Slideshow -->
+    <section id="home" class="banner-container">
+        <div class="banner-slide active" style="background-image: url(Resource/Screenshot\ 2024-11-07\ 230858\ 1.png);">
+            <div class="banner-content">
+                <h2>Selamat Datang di Himpunan Mahasiswa Teknik Pertambangan</h2>
+                <p>Memberdayakan masyarakat melalui inovasi dan kolaborasi untuk masa depan yang lebih baik</p>
+                <a href="#about" class="btn">Pelajari Lebih Lanjut</a>
+            </div>
+        </div>
+        <div class="banner-slide" style="background-image: url(Resource/Screenshot\ 2024-11-07\ 230858.png);">
+            <div class="banner-content">
+                <h2>Program Unggulan</h2>
+                <p>Ikuti program pemberdayaan terbaik kami untuk pengembangan diri dan karir di era digital</p>
+                <a href="#events" class="btn">Lihat Program</a>
+            </div>
+        </div>
+        <div class="banner-slide" style="background-image: url('/api/placeholder/1200/600');">
+            <div class="banner-content">
+                <h2>Bersama Membangun Negeri</h2>
+                <p>Bergabunglah dengan kami dalam menciptakan perubahan positif untuk masyarakat Indonesia</p>
+                <a href="#contact" class="btn">Bergabung Sekarang</a>
+            </div>
+        </div>
+
+        <div class="banner-navigation">
+            <div class="banner-dot active" data-index="0"></div>
+            <div class="banner-dot" data-index="1"></div>
+            <div class="banner-dot" data-index="2"></div>
+        </div>
+    </section>
+
+    <!-- Event Cards -->
+    <section id="events" class="event-section">
+        <h2 class="section-title">Acara Terbaru</h2>
+        <div class="event-container">
+            <div class="event-wrapper">
+                <div class="event-card">
+                    <div class="event-image" style="background-image: url(Resource/WhatsApp\ Image\ 2022-12-24\ at\ 17.18.14.jpeg);"></div>
+                    <div class="event-details">
+                        <div class="event-date">15 Maret 2025</div>
+                        <h3 class="event-title">Seminar Kepemimpinan</h3>
+                        <p class="event-description">Belajar langsung dari para pemimpin terbaik tentang keterampilan kepemimpinan efektif di era digital.</p>
+                        <a href="#" class="event-link">Baca Selengkapnya</a>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-image" style="background-image: url(Resource/IMG_20230226_123350.jpg);"></div>
+                    <div class="event-details">
+                        <div class="event-date">22 Maret 2025</div>
+                        <h3 class="event-title">Workshop Kewirausahaan</h3>
+                        <p class="event-description">Workshop intensif untuk membangun keterampilan wirausaha dan mengembangkan bisnis startup.</p>
+                        <a href="#" class="event-link">Baca Selengkapnya</a>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-image" style="background-image: url(Resource/IMG_20221024_161023_230.jpg);"></div>
+                    <div class="event-details">
+                        <div class="event-date">5 April 2025</div>
+                        <h3 class="event-title">Pelatihan Digital Marketing</h3>
+                        <p class="event-description">Kembangkan keterampilan pemasaran digital Anda untuk meningkatkan bisnis di era digital.</p>
+                        <a href="#" class="event-link">Baca Selengkapnya</a>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-image" style="background-image: url('/api/placeholder/400/200');"></div>
+                    <div class="event-details">
+                        <div class="event-date">12 April 2025</div>
+                        <h3 class="event-title">Bakti Sosial</h3>
+                        <p class="event-description">Kegiatan sosial tahunan untuk membantu masyarakat kurang mampu di daerah terpencil.</p>
+                        <a href="#" class="event-link">Baca Selengkapnya</a>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-image" style="background-image: url('/api/placeholder/400/200');"></div>
+                    <div class="event-details">
+                        <div class="event-date">20 April 2025</div>
+                        <h3 class="event-title">Konferensi Nasional</h3>
+                        <p class="event-description">Konferensi tahunan membahas inovasi dan strategi pembangunan berkelanjutan.</p>
+                        <a href="#" class="event-link">Baca Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--indeks-->
+    <div class="stats-container">
+        <div class="stat-card">
+            <div class="stat-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+            </div>
+            <div class="stat-content">
+                <div class="stat-value"><span class="counter" data-target="100">0</span> +</div>
+                <div class="stat-label">Anggota</div>
+            </div>
+        </div>
+        
+        <div class="stat-card">
+            <div class="stat-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                    <path d="M6 12v5c0 2 1 3 3 3h6c2 0 3-1 3-3v-5"></path>
+                </svg>
+            </div>
+            <div class="stat-content">
+                <div class="stat-value"><span class="counter" data-target="1000">0</span> +</div>
+                <div class="stat-label">Partisipan</div>
+            </div>
+        </div>
+        
+        <div class="stat-card">
+            <div class="stat-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4M10 17l5-5-5-5M13 12H3"></path>
+                </svg>
+            </div>
+            <div class="stat-content">
+                <div class="stat-value"><span class="counter" data-target="10">0</span> +</div>
+                <div class="stat-label">Partnership</div>
+            </div>
+        </div>
+        
+        <div class="stat-card">
+            <div class="stat-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+                    <line x1="9" y1="9" x2="9.01" y2="9"></line>
+                    <line x1="15" y1="9" x2="15.01" y2="9"></line>
+                </svg>
+            </div>
+            <div class="stat-content">
+                <div class="stat-value"><span class="counter" data-target="100">0</span> %</div>
+                <div class="stat-label">Satisfaction</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Tentang Kami</h3>
+                <p>HMTA ITERA merupakan wadah pengembangan keprofesian dan kekeluargaan bagi mahasiswa Teknik Pertambangan di Institut Teknologi Sumatera.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Kontak</h3>
+                <address>
+                    <p><i class="fas fa-map-marker-alt"></i> ITERA, Lampung</p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:hmtaitera@gmail.com">hmtaitera@gmail.com</a></p>
+                    <p><i class="fas fa-phone"></i> <a href="tel:+6282100000000">0821-XXXX-XXXX</a></p>
+                </address>
+            </div>
+            <div class="footer-section">
+                <h3>Sosial Media</h3>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/company/himpunan-mahasiswa-teknik-pertambagan-itera-hmta-itera/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/@hmta_itera" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@hmtaitera" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.tiktok.com/@hmta.balakosa.itera" target="_blank"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Himpunan Mahasiswa Teknik Pertambagan ITERA. Hak Cipta Dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+   
+</body>

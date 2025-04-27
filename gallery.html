@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylegallery.css">
+    <link rel="icon" href="Resource/IMG_1381.PNG" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>HMTA | Gallery</title>
+    <script src="gallery.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="Resource/IMG_1381.PNG" alt="Logo">
+        </a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav id="mainNav">
+            <ul>
+                <li><a href="profile.html">Profile</a></li>
+                <li class="dropdown">
+                    <a href="#">Struktur <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="Pionir.html">Kabinet Pionir</a>
+                        <a href="Reformasi.html">Kabinet Reformasi</a>
+                        <a href="Sradhakorsa.html">Kabinet Sradhakorsa</a>
+                        <a href="radiant.html">Kabinet Radiant</a>
+                        <a href="samagri.html">Kabinet Samagri</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Event <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="upcoming.html">Upcoming Events</a>
+                        <a href="past.html">Past Events</a>
+                        <a href="annual.html">Annual Programs</a>
+                    </div>
+                </li>
+                <li><a href="gallery.html" class="active">Galeri</a></li>
+                <li><a href="calendar.html">Kalender Akademik</a></li>
+            </ul>
+        </nav>
+        <button class="btn-signin">Sign In</button>
+        <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+    </header>
+
+    <main>
+        <section class="gallery-hero">
+            <div class="container">
+                <h1>Galeri Kegiatan HMTA ITERA</h1>
+                <p>Dokumentasi momen-momen berharga dari berbagai kegiatan Himpunan Mahasiswa Teknik Pertambangan ITERA</p>
+            </div>
+        </section>
+
+        <section class="gallery-filter">
+            <div class="container">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">Semua</button>
+                    <button class="filter-btn" data-filter="academic">Akademik</button>
+                    <button class="filter-btn" data-filter="organizational">Organisasi</button>
+                    <button class="filter-btn" data-filter="community">Komunitas</button>
+                    <button class="filter-btn" data-filter="other">Lainnya</button>
+                </div>
+                <div class="search-box">
+                    <input type="text" id="gallery-search" placeholder="Cari kegiatan...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-grid">
+            <div class="container">
+                <div class="gallery-items">
+                    <!-- Gallery Item 1 -->
+                    <div class="gallery-item" data-category="academic">
+                        <div class="gallery-image">
+                            <img src="https://via.placeholder.com/400x300" alt="Workshop Pertambangan">
+                            <div class="overlay">
+                                <div class="overlay-content">
+                                    <h3>Workshop Pertambangan</h3>
+                                    <p>Oktober 2024</p>
+                                    <button class="view-btn"><i class="fas fa-eye"></i> Lihat</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Workshop Pertambangan</h3>
+                            <p>Workshop teknik pertambangan bersama profesional industri</p>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 2 -->
+                    <div class="gallery-item" data-category="organizational">
+                        <div class="gallery-image">
+                            <img src="https://via.placeholder.com/400x300" alt="Rapat Kerja">
+                            <div class="overlay">
+                                <div class="overlay-content">
+                                    <h3>Rapat Kerja HMTA</h3>
+                                    <p>September 2024</p>
+                                    <button class="view-btn"><i class="fas fa-eye"></i> Lihat</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Rapat Kerja HMTA</h3>
+                            <p>Rapat kerja tahunan pengurus HMTA ITERA</p>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 3 -->
+                    <div class="gallery-item" data-category="community">
+                        <div class="gallery-image">
+                            <img src="https://via.placeholder.com/400x300" alt="Bakti Sosial">
+                            <div class="overlay">
+                                <div class="overlay-content">
+                                    <h3>Bakti Sosial</h3>
+                                    <p>Agustus 2024</p>
+                                    <button class="view-btn"><i class="fas fa-eye"></i> Lihat</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Bakti Sosial</h3>
+                            <p>Kegiatan bakti sosial di desa sekitar kampus</p>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 4 -->
+                    <div class="gallery-item" data-category="academic">
+                        <div class="gallery-image">
+                            <img src="https://via.placeholder.com/400x300" alt="Kunjungan Industri">
+                            <div class="overlay">
+                                <div class="overlay-content">
+                                    <h3>Kunjungan Industri</h3>
+                                    <p>Juli 2024</p>
+                                    <button class="view-btn"><i class="fas fa-eye"></i> Lihat</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Kunjungan Industri</h3>
+                            <p>Kunjungan ke tambang batu bara di Kalimantan</p>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 5 -->
+                    <div class="gallery-item" data-category="other">
+                        <div class="gallery-image">
+                            <img src="https://via.placeholder.com/400x300" alt="Perayaan Hari Tambang">
+                            <div class="overlay">
+                                <div class="overlay-content">
+                                    <h3>Perayaan Hari Tambang</h3>
+                                    <p>Mei 2024</p>
+                                    <button class="view-btn"><i class="fas fa-eye"></i> Lihat</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Perayaan Hari Tambang</h3>
+                            <p>Acara perayaan Hari Pertambangan Nasional</p>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 6 -->
+                    <div class="gallery-item" data-category="organizational">
+                        <div class="gallery-image">
+                            <img src="https://via.placeholder.com/400x300" alt="Pelantikan Pengurus">
+                            <div class="overlay">
+                                <div class="overlay-content">
+                                    <h3>Pelantikan Pengurus</h3>
+                                    <p>April 2024</p>
+                                    <button class="view-btn"><i class="fas fa-eye"></i> Lihat</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Pelantikan Pengurus</h3>
+                            <p>Pelantikan pengurus baru HMTA periode 2024/2025</p>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 7 -->
+                    <div class="gallery-item" data-category="community">
+                        <div class="gallery-image">
+                            <img src="https://via.placeholder.com/400x300" alt="Seminar Lingkungan">
+                            <div class="overlay">
+                                <div class="overlay-content">
+                                    <h3>Seminar Lingkungan</h3>
+                                    <p>Maret 2024</p>
+                                    <button class="view-btn"><i class="fas fa-eye"></i> Lihat</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Seminar Lingkungan</h3>
+                            <p>Seminar tentang reklamasi tambang dan pelestarian lingkungan</p>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 8 -->
+                    <div class="gallery-item" data-category="other">
+                        <div class="gallery-image">
+                            <img src="https://via.placeholder.com/400x300" alt="Kompetisi Mahasiswa">
+                            <div class="overlay">
+                                <div class="overlay-content">
+                                    <h3>Kompetisi Mahasiswa</h3>
+                                    <p>Februari 2024</p>
+                                    <button class="view-btn"><i class="fas fa-eye"></i> Lihat</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Kompetisi Mahasiswa</h3>
+                            <p>Kompetisi karya ilmiah mahasiswa teknik pertambangan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lightbox Modal -->
+        <div class="modal" id="galleryModal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <div class="modal-image-container">
+                    <img id="modal-image" src="" alt="">
+                    <button class="nav-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+                    <button class="nav-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+                <div class="modal-info">
+                    <h2 id="modal-title"></h2>
+                    <p id="modal-date"></p>
+                    <p id="modal-description"></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Tentang Kami</h3>
+                    <p>HMTA ITERA merupakan wadah pengembangan keprofesian dan kekeluargaan bagi mahasiswa Teknik Pertambangan di Institut Teknologi Sumatera.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Kontak</h3>
+                    <address>
+                        <p><i class="fas fa-map-marker-alt"></i> ITERA, Lampung</p>
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:hmtaitera@gmail.com">hmtaitera@gmail.com</a></p>
+                        <p><i class="fas fa-phone"></i> <a href="tel:+6282100000000">0821-XXXX-XXXX</a></p>
+                    </address>
+                </div>
+                <div class="footer-section">
+                    <h3>Sosial Media</h3>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/company/himpunan-mahasiswa-teknik-pertambagan-itera-hmta-itera/" target="_blank" aria-label="LinkedIn HMTA ITERA"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/hmta_itera/" target="_blank" aria-label="Instagram HMTA ITERA"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/@hmtaitera" target="_blank" aria-label="YouTube HMTA ITERA"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.tiktok.com/@hmta.balakosa.itera" target="_blank" aria-label="TikTok HMTA ITERA"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 HMTA ITERA. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
